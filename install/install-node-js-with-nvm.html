@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>使用 NVM 安裝 Node.js | Node.js 學習筆記</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.0.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../install/install-npm.html" />
+    
+    
+    <link rel="prev" href="../install/install-nvm.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    <div class="book" data-level="1.2" data-basepath=".." data-revision="Sun Jan 10 2016 20:15:09 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        介紹
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="install/install-README.html">
+            
+                
+                    <a href="../install/install-README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        安裝
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="install/install-nvm.html">
+            
+                
+                    <a href="../install/install-nvm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        安裝 NVM
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="install/install-node-js-with-nvm.html">
+            
+                
+                    <a href="../install/install-node-js-with-nvm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        使用 NVM 安裝 Node.js
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="install/install-npm.html">
+            
+                
+                    <a href="../install/install-npm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        安裝 NPM
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Node.js 學習筆記</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="%E4%BD%BF%E7%94%A8-nvm-%E5%AE%89%E8%A3%9D-node-js">&#x4F7F;&#x7528; NVM &#x5B89;&#x88DD; Node.js</h1>
+<h2 id="%E7%A2%BA%E8%AA%8D%E5%8F%AF%E4%BB%A5%E5%AE%89%E8%A3%9D%E7%89%88%E6%9C%AC%E6%B8%85%E5%96%AE">&#x78BA;&#x8A8D;&#x53EF;&#x4EE5;&#x5B89;&#x88DD;&#x7248;&#x672C;&#x6E05;&#x55AE;</h2>
+<p>&#x4F7F;&#x7528; <code>nvm ls-remote</code> &#x53EF;&#x4EE5;&#x770B;&#x5230;&#x76EE;&#x524D; nvm &#x53EF;&#x4EE5;&#x5B89;&#x88DD;&#x7684;&#x6240;&#x6709; node.js &#x7248;&#x672C;</p>
+<pre><code class="lang-shell">nvm ls-remote
+</code></pre>
+<h2 id="%E5%AE%89%E8%A3%9D%E6%8C%87%E5%AE%9A%E7%89%88%E6%9C%AC-5-4-0-%E7%9A%84-node-js">&#x5B89;&#x88DD;&#x6307;&#x5B9A;&#x7248;&#x672C; 5.4.0 &#x7684; node.js</h2>
+<pre><code class="lang-shell">nvm install 5.4.0
+</code></pre>
+<h2 id="%E6%8C%87%E5%AE%9A-nvm-%E4%BD%BF%E7%94%A8%E7%9A%84-node-js-%E7%89%88%E6%9C%AC">&#x6307;&#x5B9A; nvm &#x4F7F;&#x7528;&#x7684; Node.js &#x7248;&#x672C;</h2>
+<pre><code class="lang-shell">nvm use 5.4.0
+</code></pre>
+<h2 id="%E9%A0%90%E8%A8%AD%E4%BD%BF%E7%94%A8-5-4-0-%E7%89%88%E6%9C%AC%EF%BC%8C%E5%90%A6%E5%89%87%E6%AF%8F%E6%AC%A1%E9%87%8D%E6%96%B0%E9%80%A3%E7%B7%9A%E7%99%BB%E5%85%A5%EF%BC%8C%E9%82%84%E9%9C%80%E8%A6%81%E9%87%8D%E6%96%B0-nvm-use-%E4%B8%80%E6%AC%A1">&#x9810;&#x8A2D;&#x4F7F;&#x7528; 5.4.0 &#x7248;&#x672C;&#xFF0C;&#x5426;&#x5247;&#x6BCF;&#x6B21;&#x91CD;&#x65B0;&#x9023;&#x7DDA;&#x767B;&#x5165;&#xFF0C;&#x9084;&#x9700;&#x8981;&#x91CD;&#x65B0; nvm use &#x4E00;&#x6B21;</h2>
+<pre><code class="lang-shell">nvm alias default 5.4.0
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../install/install-nvm.html" class="navigation navigation-prev " aria-label="Previous page: 安裝 NVM"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../install/install-npm.html" class="navigation navigation-next " aria-label="Next page: 安裝 NPM"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"disqus":{"shortName":"kejyun-nodejs-learning-notes"}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
