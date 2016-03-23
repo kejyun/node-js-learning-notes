@@ -52,5 +52,6 @@ $ npm test
 
 ## 參考資料
 * [Introduction to Testing Node.js](https://www.youtube.com/watch?v=u2XCdkL4bWI)
+* [Node Unit Test Examples](https://github.com/jakerella/node-unit-tests)
 * [mocha](https://mochajs.org/)
 * [chai](http://chaijs.com/)
