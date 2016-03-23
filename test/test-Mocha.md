@@ -55,3 +55,4 @@ $ npm test
 * [Node Unit Test Examples](https://github.com/jakerella/node-unit-tests)
 * [mocha](https://mochajs.org/)
 * [chai](http://chaijs.com/)
+* [用 mocha 編寫 Node.js unit test](http://syshen.cc/post/23479369750/%E7%94%A8-mocha-%E7%B7%A8%E5%AF%AB-nodejs-unit-test)
