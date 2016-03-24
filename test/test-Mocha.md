@@ -2,6 +2,8 @@
 
 ## 安裝
 
+除了安裝 mocha 以外，再安裝 chai 去做我們驗證資料的套件
+
 ```sh
 npm install --save-dev mocha chai
 ```
