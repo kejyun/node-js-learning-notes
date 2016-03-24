@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>使用 NVM 安裝 Node.js | Node.js 學習筆記</title>
+        <title>Mocha | Node.js 學習筆記</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,8 @@
         
     
     
-    <link rel="next" href="../install/install-npm.html" />
     
-    
-    <link rel="prev" href="../install/install-nvm.html" />
+    <link rel="prev" href="../test/test-README.html" />
     
 
         
@@ -36,7 +34,7 @@
     
 
         
-    <div class="book" data-level="1.2" data-basepath=".." data-revision="Thu Mar 24 2016 08:03:41 GMT+0800 (CST)">
+    <div class="book" data-level="2.1" data-basepath=".." data-revision="Thu Mar 24 2016 08:03:41 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -97,7 +95,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="install/install-node-js-with-nvm.html">
+        <li class="chapter " data-level="1.2" data-path="install/install-node-js-with-nvm.html">
             
                 
                     <a href="../install/install-node-js-with-nvm.html">
@@ -148,7 +146,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1" data-path="test/test-Mocha.html">
+        <li class="chapter active" data-level="2.1" data-path="test/test-Mocha.html">
             
                 
                     <a href="../test/test-Mocha.html">
@@ -271,20 +269,48 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="%E4%BD%BF%E7%94%A8-nvm-%E5%AE%89%E8%A3%9D-node-js">&#x4F7F;&#x7528; NVM &#x5B89;&#x88DD; Node.js</h1>
-<h2 id="%E7%A2%BA%E8%AA%8D%E5%8F%AF%E4%BB%A5%E5%AE%89%E8%A3%9D%E7%89%88%E6%9C%AC%E6%B8%85%E5%96%AE">&#x78BA;&#x8A8D;&#x53EF;&#x4EE5;&#x5B89;&#x88DD;&#x7248;&#x672C;&#x6E05;&#x55AE;</h2>
-<p>&#x4F7F;&#x7528; <code>nvm ls-remote</code> &#x53EF;&#x4EE5;&#x770B;&#x5230;&#x76EE;&#x524D; nvm &#x53EF;&#x4EE5;&#x5B89;&#x88DD;&#x7684;&#x6240;&#x6709; node.js &#x7248;&#x672C;</p>
-<pre><code class="lang-shell">nvm ls-remote
+                        <h1 id="mocha">Mocha</h1>
+<h2 id="%E5%AE%89%E8%A3%9D">&#x5B89;&#x88DD;</h2>
+<pre><code class="lang-sh">npm install --save-dev mocha chai
 </code></pre>
-<h2 id="%E5%AE%89%E8%A3%9D%E6%8C%87%E5%AE%9A%E7%89%88%E6%9C%AC-5-4-0-%E7%9A%84-node-js">&#x5B89;&#x88DD;&#x6307;&#x5B9A;&#x7248;&#x672C; 5.4.0 &#x7684; node.js</h2>
-<pre><code class="lang-shell">nvm install 5.4.0
+<h2 id="%E8%A8%AD%E5%AE%9A%E6%B8%AC%E8%A9%A6%E7%9B%AE%E9%8C%84">&#x8A2D;&#x5B9A;&#x6E2C;&#x8A66;&#x76EE;&#x9304;</h2>
+<p>&#x5728; <code>package.json</code> &#x8A2D;&#x5B9A;&#x6E2C;&#x8A66;&#x6A94;&#x6848;&#x662F;&#x5728;&#x54EA;&#x500B;&#x76EE;&#x9304;&#xFF0C;&#x9019;&#x6A23;&#x7684;&#x8A71;&#x6211;&#x5011;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x57F7;&#x884C; <code>npm test</code> &#x53BB;&#x57F7;&#x884C;&#x6211;&#x5011;&#x7684;&#x6E2C;&#x8A66;&#x4E86;</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;scripts&quot;</span>: {
+    <span class="hljs-string">&quot;test&quot;</span>: <span class="hljs-string">&quot;./node_modules/mocha/bin/mocha path/to/test&quot;</span>
+},
 </code></pre>
-<h2 id="%E6%8C%87%E5%AE%9A-nvm-%E4%BD%BF%E7%94%A8%E7%9A%84-node-js-%E7%89%88%E6%9C%AC">&#x6307;&#x5B9A; nvm &#x4F7F;&#x7528;&#x7684; Node.js &#x7248;&#x672C;</h2>
-<pre><code class="lang-shell">nvm use 5.4.0
+<p>&#x50CF;&#x662F;&#x6211;&#x5C07;&#x6E2C;&#x8A66;&#x7684;&#x6A94;&#x6848;&#x653E;&#x5728;&#x5C08;&#x6848;&#x4E0B;&#x7684; <code>test</code> &#x76EE;&#x9304;&#x4E0B;&#xFF0C;&#x6211;&#x5C31;&#x53EF;&#x4EE5;&#x5C07;&#x6B64;&#x884C;&#x8A2D;&#x5B9A;&#x8A2D;&#x70BA;&#xFF0C;&#x9019;&#x6A23;&#x7684;&#x8A71;&#x6211;&#x5011;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>npm test</code> &#x57F7;&#x884C; <code>test</code> &#x76EE;&#x9304;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x6E2C;&#x8A66;&#x4E86;</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;scripts&quot;</span>: {
+    <span class="hljs-string">&quot;test&quot;</span>: <span class="hljs-string">&quot;./node_modules/mocha/bin/mocha ./test/&quot;</span>
+},
 </code></pre>
-<h2 id="%E9%A0%90%E8%A8%AD%E4%BD%BF%E7%94%A8-5-4-0-%E7%89%88%E6%9C%AC%EF%BC%8C%E5%90%A6%E5%89%87%E6%AF%8F%E6%AC%A1%E9%87%8D%E6%96%B0%E9%80%A3%E7%B7%9A%E7%99%BB%E5%85%A5%EF%BC%8C%E9%82%84%E9%9C%80%E8%A6%81%E9%87%8D%E6%96%B0-nvm-use-%E4%B8%80%E6%AC%A1">&#x9810;&#x8A2D;&#x4F7F;&#x7528; 5.4.0 &#x7248;&#x672C;&#xFF0C;&#x5426;&#x5247;&#x6BCF;&#x6B21;&#x91CD;&#x65B0;&#x9023;&#x7DDA;&#x767B;&#x5165;&#xFF0C;&#x9084;&#x9700;&#x8981;&#x91CD;&#x65B0; nvm use &#x4E00;&#x6B21;</h2>
-<pre><code class="lang-shell">nvm alias default 5.4.0
+<h2 id="%E7%AC%AC%E4%B8%80%E5%80%8B%E6%B8%AC%E8%A9%A6%E7%A8%8B%E5%BC%8F">&#x7B2C;&#x4E00;&#x500B;&#x6E2C;&#x8A66;&#x7A0B;&#x5F0F;</h2>
+<p>&#x5728; test &#x76EE;&#x9304;&#x4E0B;&#x5EFA;&#x7ACB;&#x6211;&#x5011;&#x7684;&#x7B2C;&#x4E00;&#x500B;&#x6E2C;&#x8A66;&#x7A0B;&#x5F0F; <code>mathTest.js</code></p>
+<pre><code class="lang-js">describe(<span class="hljs-string">&apos;math module&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+    it(<span class="hljs-string">&apos;should add numbers&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+        assert.equal((<span class="hljs-number">1</span>+<span class="hljs-number">1</span>), <span class="hljs-string">&apos;2&apos;</span>);
+        assert.strictEqual(<span class="hljs-number">127</span> + <span class="hljs-number">319</span>, <span class="hljs-number">446</span>);
+    });
+
+    it(<span class="hljs-string">&apos;should sub numbers&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+        assert.equal((<span class="hljs-number">22</span>-<span class="hljs-number">1</span>), <span class="hljs-string">&apos;21&apos;</span>);
+        assert.strictEqual(<span class="hljs-number">127</span> - <span class="hljs-number">7</span>, <span class="hljs-number">120</span>);
+    });
+});
 </code></pre>
+<p>&#x958B;&#x59CB;&#x6E2C;&#x8A66;&#x7B2C;&#x4E00;&#x500B; Node.js &#x7A0B;&#x5F0F;</p>
+<pre><code class="lang-sh">$ npm <span class="hljs-built_in">test</span>
+</code></pre>
+<p><img src="images/mocha-first-math-test.png" alt="Mocha First Math Test"></p>
+<h2 id="%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99">&#x53C3;&#x8003;&#x8CC7;&#x6599;</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=u2XCdkL4bWI" target="_blank">Introduction to Testing Node.js</a></li>
+<li><a href="https://github.com/jakerella/node-unit-tests" target="_blank">Node Unit Test Examples</a></li>
+<li><a href="https://mochajs.org/" target="_blank">mocha</a></li>
+<li><a href="http://chaijs.com/" target="_blank">chai</a></li>
+<li><a href="http://syshen.cc/post/23479369750/%E7%94%A8-mocha-%E7%B7%A8%E5%AF%AB-nodejs-unit-test" target="_blank">&#x7528; mocha &#x7DE8;&#x5BEB; Node.js unit test</a></li>
+<li><a href="http://taobaofed.org/blog/2015/12/10/nodejs-unit-tests/" target="_blank">Node.js &#x5355;&#x5143;&#x6D4B;&#x8BD5;&#xFF1A;&#x6211;&#x8981;&#x5199;&#x6D4B;&#x8BD5;</a></li>
+</ul>
 
                     
                     </section>
@@ -295,10 +321,8 @@
         </div>
 
         
-        <a href="../install/install-nvm.html" class="navigation navigation-prev " aria-label="Previous page: 安裝 NVM"><i class="fa fa-angle-left"></i></a>
+        <a href="../test/test-README.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 單元測試"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../install/install-npm.html" class="navigation navigation-next " aria-label="Next page: 安裝 NPM"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

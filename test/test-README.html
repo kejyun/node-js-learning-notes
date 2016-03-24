@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>使用 NVM 安裝 Node.js | Node.js 學習筆記</title>
+        <title>單元測試 | Node.js 學習筆記</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.2">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../install/install-npm.html" />
+    <link rel="next" href="../test/test-Mocha.html" />
     
     
-    <link rel="prev" href="../install/install-nvm.html" />
+    <link rel="prev" href="../install/install-npm.html" />
     
 
         
@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="1.2" data-basepath=".." data-revision="Thu Mar 24 2016 08:03:41 GMT+0800 (CST)">
+    <div class="book" data-level="2" data-basepath=".." data-revision="Thu Mar 24 2016 08:03:41 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -97,7 +97,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="install/install-node-js-with-nvm.html">
+        <li class="chapter " data-level="1.2" data-path="install/install-node-js-with-nvm.html">
             
                 
                     <a href="../install/install-node-js-with-nvm.html">
@@ -132,7 +132,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2" data-path="test/test-README.html">
+        <li class="chapter active" data-level="2" data-path="test/test-README.html">
             
                 
                     <a href="../test/test-README.html">
@@ -271,20 +271,21 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="%E4%BD%BF%E7%94%A8-nvm-%E5%AE%89%E8%A3%9D-node-js">&#x4F7F;&#x7528; NVM &#x5B89;&#x88DD; Node.js</h1>
-<h2 id="%E7%A2%BA%E8%AA%8D%E5%8F%AF%E4%BB%A5%E5%AE%89%E8%A3%9D%E7%89%88%E6%9C%AC%E6%B8%85%E5%96%AE">&#x78BA;&#x8A8D;&#x53EF;&#x4EE5;&#x5B89;&#x88DD;&#x7248;&#x672C;&#x6E05;&#x55AE;</h2>
-<p>&#x4F7F;&#x7528; <code>nvm ls-remote</code> &#x53EF;&#x4EE5;&#x770B;&#x5230;&#x76EE;&#x524D; nvm &#x53EF;&#x4EE5;&#x5B89;&#x88DD;&#x7684;&#x6240;&#x6709; node.js &#x7248;&#x672C;</p>
-<pre><code class="lang-shell">nvm ls-remote
-</code></pre>
-<h2 id="%E5%AE%89%E8%A3%9D%E6%8C%87%E5%AE%9A%E7%89%88%E6%9C%AC-5-4-0-%E7%9A%84-node-js">&#x5B89;&#x88DD;&#x6307;&#x5B9A;&#x7248;&#x672C; 5.4.0 &#x7684; node.js</h2>
-<pre><code class="lang-shell">nvm install 5.4.0
-</code></pre>
-<h2 id="%E6%8C%87%E5%AE%9A-nvm-%E4%BD%BF%E7%94%A8%E7%9A%84-node-js-%E7%89%88%E6%9C%AC">&#x6307;&#x5B9A; nvm &#x4F7F;&#x7528;&#x7684; Node.js &#x7248;&#x672C;</h2>
-<pre><code class="lang-shell">nvm use 5.4.0
-</code></pre>
-<h2 id="%E9%A0%90%E8%A8%AD%E4%BD%BF%E7%94%A8-5-4-0-%E7%89%88%E6%9C%AC%EF%BC%8C%E5%90%A6%E5%89%87%E6%AF%8F%E6%AC%A1%E9%87%8D%E6%96%B0%E9%80%A3%E7%B7%9A%E7%99%BB%E5%85%A5%EF%BC%8C%E9%82%84%E9%9C%80%E8%A6%81%E9%87%8D%E6%96%B0-nvm-use-%E4%B8%80%E6%AC%A1">&#x9810;&#x8A2D;&#x4F7F;&#x7528; 5.4.0 &#x7248;&#x672C;&#xFF0C;&#x5426;&#x5247;&#x6BCF;&#x6B21;&#x91CD;&#x65B0;&#x9023;&#x7DDA;&#x767B;&#x5165;&#xFF0C;&#x9084;&#x9700;&#x8981;&#x91CD;&#x65B0; nvm use &#x4E00;&#x6B21;</h2>
-<pre><code class="lang-shell">nvm alias default 5.4.0
-</code></pre>
+                        <h1 id="%E5%96%AE%E5%85%83%E6%B8%AC%E8%A9%A6">&#x55AE;&#x5143;&#x6E2C;&#x8A66;</h1>
+<h2 id="%E6%B8%AC%E8%A9%A6-framework">&#x6E2C;&#x8A66; Framework</h2>
+<ul>
+<li><a href="https://mochajs.org/" target="_blank">mocha</a></li>
+<li><a href="http://chaijs.com/" target="_blank">chai</a></li>
+<li><a href="http://jasmine.github.io/2.0/node.html" target="_blank">jasmine</a></li>
+<li><a href="http://karma-runner.github.io/0.13/intro/installation.html" target="_blank">karma</a></li>
+<li><a href="http://visionmedia.github.io/expresso/" target="_blank">expresso</a></li>
+<li><a href="http://www.node-tap.org/" target="_blank">node-tap</a></li>
+<li><a href="https://theintern.github.io/" target="_blank">intern</a></li>
+<li><a href="https://github.com/caolan/nodeunit" target="_blank">node-unit</a></li>
+<li><a href="http://vowsjs.org/" target="_blank">vows</a></li>
+<li><a href="https://github.com/kof/node-qunit" target="_blank">node-qunit</a></li>
+<li><a href="http://unitjs.com/" target="_blank">unitjs</a></li>
+</ul>
 
                     
                     </section>
@@ -295,10 +296,10 @@
         </div>
 
         
-        <a href="../install/install-nvm.html" class="navigation navigation-prev " aria-label="Previous page: 安裝 NVM"><i class="fa fa-angle-left"></i></a>
+        <a href="../install/install-npm.html" class="navigation navigation-prev " aria-label="Previous page: 安裝 NPM"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../install/install-npm.html" class="navigation navigation-next " aria-label="Next page: 安裝 NPM"><i class="fa fa-angle-right"></i></a>
+        <a href="../test/test-Mocha.html" class="navigation navigation-next " aria-label="Next page: Mocha"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
